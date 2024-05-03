@@ -70,7 +70,7 @@ body {
 
 .div_titulo_sobremim {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 65% 35%;
 }
 
 .div_titulo_sobremim_right {
@@ -184,7 +184,7 @@ body {
 
     padding: 20px 40px 20px 40px;
     margin-top: 60px;
-    height: 87.7vh;
+    height: calc(38vw + 38vh);
     background-image: linear-gradient(180deg, #f9fdcc, #008080);
 
     align-items: center;
@@ -222,8 +222,8 @@ body {
 
 .item {
     background-color: #f9fdcc;
-    width: 22vw;
-    height: 64vh;
+    width: 20vw;
+    height: calc(20vh + 20vw);
 
     border-radius: 10px;
 
@@ -240,8 +240,8 @@ body {
 
 .item:hover {
     opacity: 1;
-    width: 24vw;
-    height: 66vh;
+    width: 22vw;
+    height: calc(22vh + 22vw);
 }
 
 .title_item {
@@ -251,7 +251,9 @@ body {
 }
 
 .img_item {
-    width: calc(10vw + 10vh);
+    width: 10vw;
+    height: 10vw;
+    /* width: calc(10vw + 10vh); */
     border-radius: 4px;
 }
 
