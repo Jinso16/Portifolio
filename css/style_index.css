@@ -286,6 +286,9 @@ body {
     font-size:  calc(0.6vh + 0.6vw);
 }
 
+a {
+    text-decoration: none;
+}
 
 
 
