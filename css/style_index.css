@@ -184,7 +184,7 @@ body {
 
     padding: 20px 40px 20px 40px;
     margin-top: 60px;
-    height: calc(32vw + 32vh);
+    height: calc(28vw + 28vh);
     background-image: linear-gradient(180deg, #f9fdcc, #008080);
 
     align-items: center;
@@ -194,7 +194,7 @@ body {
     position: absolute;
     left: 0;
     margin: 0;
-    margin-left: 70px;
+    margin-left: calc(3vh + 3vw);
     color: #008080;
 
     
@@ -209,10 +209,10 @@ body {
     display: grid;
     grid-template-columns: 33% 33% 33%;
 
-    width: 80vw;
+    width: 85vw;
     height: 70vh;
 
-    margin-top: calc(7vh + 7vw);
+    margin-top: calc(5vh + 5vw);
 
     transition: 0.3s ease;
 
@@ -260,7 +260,7 @@ body {
 .desc_item {
     color: #008080;
 
-    font-size: calc(0.8vh + 0.8vw);
+    font-size: calc(0.7vh + 0.7vw);
 }
 
 .low_infos {
