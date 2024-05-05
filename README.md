@@ -5,7 +5,8 @@ Portifólio pessoal.
 Avaliação 1.
 
 INSTALAÇÃO:
-  - Faça o download dos arquivos.
+  - Faça o download do arquivo ZIP.
+  - Extraia o arquivo em uma pasta.
   - Execute o arquivo "Index.html" usando o navegador
   - tudo pronto!
 
