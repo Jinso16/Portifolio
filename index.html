@@ -2,13 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
     <title>Portifólio</title>
 
     <link rel="stylesheet" href="css/style_index.css">
 </head>
 <body>
-    <div class="cabecalho">
+    <div class="cabecalho" id="hidden">
         <div class="cab_left">
             <h2 class="name_title" >JOÃO VITOR <br> MICHELON</h2>
         </div>
@@ -28,11 +28,11 @@
         </div>
     </div>
 
-    <div class="between">
+    <div class="between" id="hidden">
 
     </div>
 
-    <div class="div_sobre">
+    <div class="div_sobre" id="hidden">
         <div class="div_titulo_sobremim">
             <div>
                 <h1 class="titulo_sobremim">S O B R E‎ ‎ ‎ ‎ M I M :</h1>
@@ -57,15 +57,15 @@
     <div class="divisor">
     </div>
 
-    <div class="div_arrow_down">
-        <img src="imagens/arrow_down.png" alt="arrow_down" class="arrow_down">
-        <img src="imagens/arrow_down.png" alt="arrow_down" class="arrow_down">
-        <img src="imagens/arrow_down.png" alt="arrow_down" class="arrow_down">
-        <img src="imagens/arrow_down.png" alt="arrow_down" class="arrow_down">
-        <img src="imagens/arrow_down.png" alt="arrow_down" class="arrow_down">
+    <div class="div_arrow_down" id="hidden">
+        <img src="imagens/arrow_down.png" alt="arrow_down" class="arrow_down" >
+        <img src="imagens/arrow_down.png" alt="arrow_down" class="arrow_down" >
+        <img src="imagens/arrow_down.png" alt="arrow_down" class="arrow_down" >
+        <img src="imagens/arrow_down.png" alt="arrow_down" class="arrow_down" >
+        <img src="imagens/arrow_down.png" alt="arrow_down" class="arrow_down" >
     </div>
 
-    <div class="div_projetos">
+    <div class="div_projetos" id="hidden">
         <h1 class="title_meusprojetos">MEUS PROJETOS:</h1>
 
 
@@ -100,7 +100,7 @@
         </div>
     </div>
 
-    <div class="low_infos">
+    <div class="low_infos" id="hidden">
         <div class="low_infos_left">
             <h5 class="low_infos_txt">João Vitor Michelon - 2024</h5>
         </div>
@@ -109,5 +109,24 @@
             <h5 class="low_infos_txt"> joaovitormichelon17@gmail.com ‎ ‎ | ‎ ‎ (55) 54 996693260</h5>
         </div>
     </div>
+
+    <script>
+        const observer = new IntersectionObserver( entries => {
+            console.log(entries)
+
+            Array.from(entries).forEach( entry => {
+                if (entry.intersectionRatio >= 1){
+                    entry.target.id = 'not-hidden'
+            }
+            })
+        }, {
+            threshold: [0, .3, 1]
+        })
+
+        Array.from(document.querySelectorAll('#hidden')).forEach( elements => {
+            observer.observe(elements)
+        })
+
+    </script>
 </body>
 </html>
