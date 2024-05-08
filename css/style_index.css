@@ -34,7 +34,7 @@ body {
 .img {
     opacity: 0.5;
     margin-left: 25px;
-    width: calc(1.2vh + 1.2vw);
+    width: calc(1.4vh + 1.4vw);
     transition: 0.3s ease;
 
 }
@@ -135,16 +135,12 @@ body {
     transition: 0.3s ease;
     width: calc(16vw + 16vh);
 
-    /* border-radius: 100%; */
-
-    margin-top: 3px;    
-
-    filter: blur(0);
+    margin-top: 20px;
 
     border: 0px solid #f9fdcc;
 }
 
-.foto_minha:hover {
+.foto_minha:hover{
     border: 5px solid #f9fdcc;
     width: calc(17vw + 17vh);
 }
